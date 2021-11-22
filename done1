@@ -1,0 +1,184 @@
+def printme(str)
+"Esta função imprime:"
+print str
+return
+## Toda func em py começa com def, depois do def há o nome da func, seguida da lista de parâmetros que o parênteses são obrigatórios. Lista seguido de (":"). Cuidaod ao digita os blocos de command. Todas func termina com return, que pode ser seguido ou não de uma variável.
+
+class Nome_da_classe:
+    'Strind de documentação da classe (opt)''
+Corpo_da_classe
+
+classe Empregado:
+    'Classe base para empregados'
+    contador = 0
+
+    def_init_(self,nome,salario):
+        self.nome = nome
+        self.salario = salario
+        Empregado.contador += 1
+
+        def mostra_contador (self)
+        Print ("Número de empregados: %d" % Empregador.contador)
+
+        def mostra_empregado (self):
+            Print ("Nome:" self.nome, ", Salário: ", self.salario)
+            ## Linha 1 classe e nome, (":"); Linha 2 description of class, string doc classes; Line 3 variável de classe, counter. Remenber: variável de class are different from variável de instância; Line 4 Activities for control manager/ Impacts for manager changes; Line 5-8: construct method "_init_ ()"// thats will define the variables of classes; Line 10-13 using the methods self. Doesn't have been different, py do this.
+
+class Ponto:
+    'Classes for represents and manager X and Y'
+    def __init__ (self, _x, _y) :
+        self.x = _x
+        self.y = _y
+        emp1 = Empregado("Silva", 1000)
+        emp2 = Empregado ("John", 1500)
+
+        p=Ponto(2,3)
+        q=Ponto(3,2)
+        emp1.mostra_empregado()
+        Nome : Silva , Salário: 1000
+        emp2.mostra_empregado()
+        Nome: John, Salário: 1500
+        emp1.idade = 44
+        ##variable
+        print("Nome: ","emp1.nome," - Salário: ", emp1.salario" Idade: emp1.idade)
+        Nome: Silva - Salário: 1000 - Idade: 44
+        print("Nome: ",emp2.nome," - Salario:",emp2.salario," - Idade:",emp2.idade)
+Traceback (most recent call last):
+        File "", line 1, in
+            print("Nome: ",emp2.nome," - Salario:",emp2.salario," - Idade:",emp2.idade)
+AttributeError: 'Empregado' object has no attribute 'idade'
+de1 emp1.idade
+## create a method to coordinated X and Y
+def getX(self):
+        return self.x
+def getY(self):
+        return self.y
+        ## for classes
+        &__dict__ name to class
+        __doc__ sequence for doc to class or none (indef)
+        __name__ name of class
+        __module__ name for modul where the class are def (to make atributed is __main__)
+        __bases__ tuple for none in class base
+
+        ## examples
+        class MinhaClasse(object)
+        code...
+        class Contact:
+        all_contacts
+        def __init__ (self, name, email):
+	     self.name = name
+         self.email = email
+	    Contact.all_contacts.append (self)
+
+        ## ("[]") its a variable for class and the value is charing by all object init. Some of them all_contacts.
+        class Outfitter (Contact):
+	        def request (self, request)
+	                print (“request {} done by {}”, format (request,self.name))
+## test for create 2 objects: c and f
+c=Contact("Thename", "thename@email.com")
+f= Outfitter("Outfitter X", "outfitter@outfit.com")
+
+##lets see the values 
+print(c.name,c.email,f.name,f.email)
+def mostra_empregado(self) :
+    print("Name :", "self.name, ", "Salario: " ), self.salario) Thename thename@contact.com Outfitter X outfitter@outfit.com
+    >> c.all_contacts
+    [<__main__.Contact object at 0x0000000002F7113C8],
+    <__main__.Outfitter object at 0x0000000002FD8B70]
+    >>> C.request("req0001")
+    Traceback (most recent call last):
+    File "", line 1, in
+    c.request("req0001")
+    AttributeError: 'contact' objecthas no attribute 'request'
+    ### testing the method request() at object for the right class
+    f.request("req0001")
+    Request req0001 done by Outfitter x
+    ## override in method __init__
+    class Friends(Contact) :
+        def __init__(self,name,email,telephone):
+            self.name = name
+            self.email = email
+            self.telephone = telephone
+
+## subclasse with another instance could first construct the superclass, after the subclass. Named method super()
+class Friends(contact):
+    def_init_(self,name,email,telephone):
+        super(). __init__(name,email)
+        self.telephone = telephone
+
+## classes, superclass, 
+class FileAudio:
+    def_init_(self,archive):
+        if not File .endswith (self.ext) :
+            raise Exception ("Format unvalid")
+class FileMP3(FileAudio)        
+ext="mp3"
+def play(self)
+print("Playing {} as MP3 .format(self.file"))
+class FileWav(FileAudio)
+ext="wav"
+def play (self):
+    print("Playing {} as WAV" .format(self.file))    
+class FileOgg(FileAudio):
+    ext="ogg"
+    def play(self):
+        print ("Playing {} as OGG".format(self.file))
+
+##   test
+ogg = FileOgg("music.ogg")
+mp3 = FileMP3("music.mp3")
+wav = FileWav("music.wav")
+ogg.play
+Playing music.ogg as ogg
+wav.play()
+Playing music.wav as wav
+mp3.play()
+Playing music.mp3 as mp3
+test_ogg = FileMP3("anothermusic.ogg")
+Traceback (most recent call last):
+File "", line 1 in
+test_ogg = FileMP3 ("anothermusic.ogg")
+File "", line 4, in __init__
+raise Exception("Format invalid")
+Exception: invalid
+## duck typing
+class FileAAC:
+    def_init_(self,file):
+        if not file.endswith(".aac"):
+            raise Exception("Format invalid")
+            self.file = file
+            def play(self)
+            print("Playing {} as aac". format(self.file))
+#test
+aac = FileAAC("music.aac")
+aac.play()
+Playing music.aac as aac
+## exercise 1
+class People
+def_init_("self, name=", age=0):
+    self.name = name
+    self.age = age
+    def getage(self):
+        return self.age
+class PhysicalPerson(People):
+    def_init_(self,CPF, name=", age=0):
+        People __init__(self,name,age)
+        self.CPF = CPF
+class JuridicalPerson(People):
+    def_init_(self, CNPJ, name=, age=0):
+        People __init__(self,name,age)
+        self.CNPJ = CNPJ  
+## PhysicalPerson and JuridicalPerson now
+a = People()
+People __init__(a,'Name', 45)
+b = JuridicalPerson('111.222.333-4', name=", age=0)
+bank - JuridicalPerson('11.222.333/0001-44', name='Bank X', age=100)
+## check
+class Sales:
+    def_init_(self,id) :
+        self.id = id
+        id = 100
+val = Sales(123)
+print (val.id)              
+
+
