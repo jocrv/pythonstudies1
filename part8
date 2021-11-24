@@ -1,0 +1,146 @@
+# Part8
+Reading and writting file and texts. Open and Write. Method open() and path()
+e ##open the file to read. Insert or change the content
+w ## open to write. the file were exists will be write now
+a-append ## open the file to insert data which will write in the end
+r* ## open the file to read and write
+open() ##to hide the mood as "r"
+## Method open()
+# Iteration
+for line in a:
+            print(linha)
+<h1>AJAX</h1>
+<p>AJAX is not a programming language.</p>
+<p>AJAX is a technique for accessing web servers from a web page.</p>
+<p>AJAX stands for Asynchronous JavaScript And XML.</p>
+##String
+content = a.read()
+content
+<h1>AJAX</h1>
+<p>AJAX is not a programming language.</p>
+<p>AJAX is a technique for accessing web servers from a web page.</p>
+<p>AJAX stands for Asynchronous JavaScript And XML.</p>
+## readlines()
+a = open("c:\\users\\ana\\ajax_info.txt")
+list = a.readlines()
+list
+['<h1>AJAX<h1>\n', '<p>AJAX is not a programming language.</p>\n', '<p>AJAX is a technique for accessing web servers from a web page.</p>\n', '<p>AJAX stands for Asynchronous JavaScript And XML.</p>']
+## read the file line for line
+a = open("c:\\users\\ana\\ajax_info.txt")
+lin1 = a.readline()
+lin2 = a.readline()
+lin3 = a.readline()
+lin1
+'<h1>AJAX</h1>\n'
+lin2
+'<p>AJAX is not a programming language.</p>\n'
+lin3
+'<p>AJAX is a technique for accessing web servers from a web page.</p>\n'
+## Create a file empty
+b = open("c:\\users\\ana\\newone.txt","w")
+## delete a content as a file
+open()
+## write a new file text
+b = open("c:\\users\\ana\\newfile1.txt","w")
+b.write("I'm a good girl")
+39
+c = open("c:\\users\\ana\\newfile.txt","r")
+for line in c:
+            print(line)
+I'm a good girl
+## add new content to an existing filem
+a = open("c:\\users\\ana\\ajax_info.txt")
+data = a.readlines()
+data
+['<h1>AJAX</h1>\n', '<p>AJAX is not a programming language.</p>\n', '<p>AJAX is a technique for accessing web servers from a web page.</p>\n', '<p>AJAX stands for Asynchronous JavaScript And XML.</p>']
+data.append("<p>New line insert</p>")
+a = open("c:\\users\\ana\\ajax_info.txt","w")
+a.writelines(dados)
+## R mood, and add to the data file with the list data. After we insert writelines(). The method writelines() is different because accept the write() with the list string, and write accept the string only.
+
+## Strings
+# String is like arrays with caracteres
+str1 = "Underthesea"
+>>> str1
+'Underthesea'
+[>>> str1[0]]
+'N'
+>>> str1[1]
+'a'
+>>> str[20]
+Traceback (most recent call last):
+File "<pyshell#21p>", line 1, in <module>
+    str[20]
+TypeError: 'type' object is not subscriptable
+## Changing the alternative
+str1[0]="F"
+Traceback (most recent call last):
+File "<pyshell#26>", line 1, in <module>
+    [str1[0]="F"]
+TypeError: 'str' object does not support item assignment
+## Iteration in strings
+for i in str1:
+        print(i)
+u
+n
+d 
+e 
+r 
+t 
+h 
+e 
+s 
+e 
+a 
+## Using slice one string
+str1[0:5]
+'Under''
+str1[:5]
+['Under']
+str1[5:]
+'thesea''
+str1[-1]
+'a'
+str1[:]
+'Underthesea'
+## check if the caractere were in the string
+'f' in str1
+False
+'n' in str1
+True
+## Check the tamanho of string
+len(str1)
+11
+## convert string to minimun or caption letter
+str1.upper()
+'UNDERTHESEA''
+str1.lower()
+'underthesea''
+## convert the number to the string
+x= 666
+tyoe(x)
+class 'int'
+x1 = str(x)
+type(x1)
+class 'str'
+## check the string if have non alphabetical caracteres
+str1.isalpha()
+True
+str1= "Underthesea123"
+str1.isalpha()
+False
+## take off the white spaces of the begin and the end of string
+str2 = "Underthesea"
+str2
+'Underthesea''
+str2.strip()
+'Underthesea''
+##Closing the itens with a specif methos to limit 
+str2
+'Underthesea''
+"-".join(str2)
+'Underthesea'
+## examples
+str = str.strip()  ##str= "Sweet as a chilly bomb" // How to take off the white spaces from the white string str?
+
+
