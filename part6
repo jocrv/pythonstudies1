@@ -1,0 +1,205 @@
+## PART 6
+list = []
+list
+[]
+list2= ['Hello, world',123]
+##create
+list2
+['Hello', 'world', 123]
+## verified all values
+list2[0]
+## list starts with index 0
+'Hello'
+123
+list2[3]  ##none elements in this position
+Traceback (most recent call last):
+File <"pyshell#7">, line 1, in < module >
+list2[3]
+IndexError: list index out of range ##error 
+'mundo' in list
+False
+'world' in list2 
+True
+## add max and minimun of numbers
+list_num=[10,50,40,30,50,90,70]
+minimun(list_num)
+10
+max(list_num)
+90
+sum(list_num)  ##add all numbers
+340
+## append() methods
+states = ['SP', 'RJ', 'ES'] ##list
+states
+['SP', 'RJ', 'ES'] ##show all states here
+states.append('MG') ##add 'MG' in the end of list
+states ['SP', 'RJ', 'ES', 'MG'] ##verified 
+## delete elements with pop() methods
+states['SP', 'RJ', 'ES', 'MG'] ##original list
+states.pop(4) ##delete the position 4
+Traceback(most recent call last): File, line 1, in < module > states.pop(4)
+IndexError: pop index out of range
+states.pop(0) 'SP'  ##delete the position 0
+states['RJ', 'ES', 'MG']  ##check the list
+states.pop() ##execute pop() without parameters
+'MG'  ##check the last element
+## when we doesnt know the position of element we take off (ex. 'ES') e using the remove() method
+states
+['RJ', 'SP', 'ES']
+states.remove('ES')
+states 
+['RJ','SP']
+## using a specific position for any element using insert()
+states
+['RJ','ES'] ##original list
+states.insert(1, 'SP') ## insert 'SP' on position 1
+states
+['RJ', 'SP', 'ES'] ##'SP' insert
+## for ordering any elements using the sort() methods
+states.sort()
+states ['ES', 'MG', 'RJ', 'SP']
+## descreasing sequence before random using shuffle() , import random with object and mix with elements aleatory
+import random  ##import library random
+random.shuffle(states) ##using shuffle() for mix list
+states['ES', 'SP', 'MG', 'RJ'] ## mix list
+states.reverse()  ##classification decreasing
+['RJ', 'MG', 'SP', 'ES'] ##classi list in order decreasing
+##count element using method count() for any occcurrences on the list 
+states
+['RJ', 'MG', 'SP', 'ES']
+states.append('MG')
+states.append('MG')
+states
+['RJ', 'MG', 'SP', 'ES', 'MG', 'MG']
+states.count('MG')
+3
+states.count('RJ')
+1
+##return any index after the first sequence of elements
+states
+['RJ', 'MG', 'SP', 'ES', 'MG', 'MG']
+states.index('MG')
+1
+## here the element 'MG' will search on the list. It's on position 1, so return the method.
+sul = ['PR', 'SC', 'RS'] ##create the list south
+states = ['ES', 'MG', 'RJ', 'SP'] ##create the general list
+## prologation
+sul =['PR', 'SC', 'RS'] ##create the list south
+states = ['ES', 'MG', 'RJ', 'SP'] ##create the original list
+states.extend(south) ##prolongation the list of states
+states
+[ 'ES', 'MG', 'RJ', 'SP', 'PR', 'SC', 'RS'] ## new list 
+## LIFO
+the line of impression, FIFO
+FIFO for logistic to stock the materials
+FIFO for countability and avaliation to active the circulate, to find the result from the enterprise for a specific period
+Heap and Stack is an operational system
+train cars - not possible take one from the middle of the train
+buffer for recording data memories
+LIFO ou UEPS logisticto stock materials
+LIFO on countability to avaliation all the active, to find profit on market on this time
+LIFO (last in, first out) = the last to in the first to out
+push = thing on the structure or include elements there
+pop = process to delete or take off elements on the structure
+## methods insert () or methods pop()
+Stack = []  create lists for Stack
+Stack
+[]
+Stack.insert(0,1) ##start new sequence to push
+Stack
+[1]
+Stack
+Stack.insert(0,2)
+Stack
+[2,1]
+Stack.insert(0,3)
+Stack
+[3,2,1]
+Stack.insert(0,4)
+Stack
+[4,3,2,1]
+stack.insert(0,5)
+stack ##check the stack after the sequence
+[5,4,3,2,1]
+stack.pop(0) ##starts to begin push
+5
+stack
+[4,3,2,1]
+stack.pop(0)
+4
+Stack
+[3,2,1]
+stack.pop(0)
+3
+stack
+[2,1]
+stack.pop(0)
+2
+stack
+[1]
+stack.pop(0)
+1
+stack #end of lis
+[]
+class Stack(object) :
+    def_init_(self):
+        self.data = []
+        def push(self,element):
+            def pop(self)
+ ##queue
+ FIFO(first in, first out) = the first in is the last out
+ ## Enqueu ; Dequeue ; both to insert or using append() and pop()
+ stack=[] ##create a new stack
+ stack.append(1)  ##enqueu from element 1
+ stack
+ [1]
+ stack.append(2)  ##enqueue: element 2
+ stack
+ [1,2]
+ stack.append(3)
+ stack
+ [1,2,3]
+ stack.append(4)
+ stack
+ [1,2,3,4]
+ stack.append(5)
+ stack
+ [1,2,3,4,5]
+ stack.append(6)
+ stack  ##complete stack
+ [1,2,3,4,5,6]
+ stack.pop(0)  ##starts a new dequeue, all from begin
+ 1
+ stack
+ [2,3,4,5,6]
+ stack.pop(0)
+ 2
+ stack
+ [3,4,5,6]
+ stack.pop(0)
+ 3
+ stack
+ [4,5,6,]
+ stack.pop(0)
+ 4
+ stack
+ [5,6]
+ stack.pop(0)
+ 5
+ stack
+ [6]
+ stack.pop(0)
+ 6
+ stack  ##all attends
+ []
+##
+class Stack(object):
+    def_init_(self):
+        self.data = []
+    def enqueue (self,element):
+        # here implementation an enqueue
+        def Dequeue(self):
+            # here implements from dequeue
+ ## 2
+ def none(self):
+     return len(self.data) == 0
