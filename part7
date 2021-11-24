@@ -1,0 +1,200 @@
+##PART 7
+##tuple
+my_tuple = ('t', 'u','p', 'l', 'a')
+my_tuple
+('t', 'u', 'p', 'l', 'a')
+my_tuple[0] = 's'
+Traceback(most recent call last):
+File "< physhell#151 >", line 1, in < module >
+my_tuple[o] = 's'
+TypeError: 'tuple' object does not support item assignment
+my_tuple[0]
+'t'
+my_tuple[4]
+'a'
+my_tuple[10]
+Traceback (most recent call last):  ##follow the index
+File "", line 1, in ##no elements on position 10
+my_tuple[10]
+IndexError: tuple index out of range
+
+my_tuple
+('t', 'u', 'p', 'l', 'a')
+my_tuple[1:3]
+('u', 'p')
+##slice examples
+my_tuple
+('t', 'u', 'p', 'l', 'a')
+my_tuple[2:] ##take the elements from position 2 along
+('p', 'l', 'a')
+my_tuple[:3] ##take the n elements in this case the 3 numbers
+('t', 'u', 'p')
+my_tuple[:] ##all tuple
+('t', 'u', 'p', 'l', 'a')
+## examples
+my_tuple = (1,2,3,4)
+my_tuple.append ( ( 5,6,7))
+print(len(my_tuple))
+error
+##len methods
+len(my_tuple)
+5
+len(("Hello", "world", "do", "python"))
+4
+##using operation "+"
+part1=("Listen", "do", "Missouri")
+part2=("the", "river", "wonderful")
+verse = part1+part2
+verse1
+('Listen', 'do', 'Missouri', 'the', 'river', 'wonderful')
+##repet elements
+mi=('mi', ) ##details the comma
+mi*10
+('mi', 'mi', 'mi', 'mi', 'mi', 'mi', 'mi', 'mi', 'mi', 'mi')
+## for example mi2=('mi') python means string, so repet this elements ten times, without changes
+my_tuple
+('t', 'u', 'p', 'l', 'a')
+'u' in my_tuple
+True
+'f' in my_tuple
+False
+##example analyse
+none = {}
+none[1] = 1
+none['1'] = 2
+none[1] +=1
+add = 0
+for k in none:
+    add += none [k]
+print (add)
+4
+## create a dictionary
+contacts={}
+contacts
+{}
+# list with ["e"] and tuple with ("e"); dictionary with {"e"}
+## add data in dictionary
+contacts["Felix"]=["1111-2222"] ##create values for key values
+contacts
+{'Felix': ['1111-2222']}  ##content to dictionary
+## now using list with values
+tel_britney = ["2221-3321", "3322-3333"]
+contacts["Britney"]=tel_britney 
+contacts
+{'Felix': ['1111-2222'], 'Britney': ['2221-3321', '3322-3333']}
+## start the beginner
+contacts["Picaro"]=["4444-4441"]
+contacts["Calvin"] = ["4444-5541", "7777-4545"]
+tel_claire = ["3333-9999", "8888-3333", "888-3434"]
+contacts["Claire"]= tel_claire
+contacts
+{'Felix': ['1111-2222'], 'Britney' ['2221-3321', '3322-3333'], 'Picaro':
+['4444-4441'], 'Calvin': ['4444-5541', '7777-4545'], 'Claire':
+['333-9999', '8888-3333', '8888-3434']}
+## acess data in dictionary
+contacts['Felix']  ##simple for acess
+['1111-2222']
+tel_captain = contacts["Claire"] ##create a variable to receive
+tel_captain  ##content for key
+['4444-5541', '7777-4545']
+## change the key in dictionary
+contacts["Felix"]
+['1111-2222']
+contacts["Felix"] = ["9999-1010"] 
+contacts["Felix"] = ["9999-1010"]
+contacts["Felix"]
+['9999-1010']
+## order dictionary: using methos sort(), outside the hash table: when the elements aren't esentials, e proposal.
+# Methods to order dictionary
+## Method keys()
+contact.keys()
+dict_keys(['Felix', 'Britney', 'Picaro', 'Claire', 'Albert', 'Calvin'])
+## Methods values ()
+dict_values([['9999-1010'], ['2221-3321', '3322-3333'], ['4444-4441'], ['4444-5541', '7777-4545'],
+['3333-9999', '8888-3333', '8888-3434']])
+## Method get()
+contacts
+{'Felix': ['9999-1010'], 'Britney': ['2221-3321', '3322-3333'], 'Picaro': ['4444-4441'], 'Calvin':
+['4444-5541', '7777-4545'], 'Claire': ['3333-9999', '8888-3333', '8888-3434']}
+contacts.get('Britney')
+['2221-3321', '3322-3333']  ## show the contatc in the key 'Britney''
+contacts.get('Maradona')
+None ## none values inside the key 'Maradona''
+contacts.get('Rivelino')
+None
+contacts.get('Picaro')
+['4444-4441']
+##Method in: acess the key in the dictionary
+"Picaro" in contacts
+True ##the key "Picaro" exists in dictionary
+"Maradona" in contacts
+False ##this key "Maradona" doesnt exists in dictionary
+## Methods items()
+contacts.items()
+dict_items([('Felix',['999-1010']), ('Britney', ['2221-3321', '3322-3333']), ('Picaro', ['4444-4441']),
+('Calvin', ['4444-5541', '7777-4545']),
+('Claire', ['3333-9999', '8888-3333', '8888-3434'])])
+## Method copy()
+contacts
+{'Felix': ['9999-1010'], 'Britney': ['2221-3321', '3322-3333'], 'Picaro': ['4444-4441'], 'Calvin':
+['4444-5541', '7777-4545'], 'Claire': ['3333-9999', '8888-3333', '8888-3434']}
+>>> players = contatos.copy()
+>>> players
+{'Felix': ['9999-1010'], 'Britney': ['2221-3321', '3322-3333'], 'Picaro': ['4444-4441'], 'Calvin':
+['4444-5541', '7777-4545'], 'Claire': ['3333-9999', '8888-3333', '8888-3434']}
+## Method clear()
+contacts.clear()
+contacts
+{}
+## examples
+init_tuple = ()
+print (init_tuple.__len__())
+print (0)
+## Others methods as dict()
+### lists of tuple: one key and one value
+### sequence of itens: key-value
+shirts = dict([(7, "Joel"), (9, "Tostenes"), (10, "Maradona"),(11, 'Romario')])
+shirts[7]
+'Joel''
+shirts[10]
+'Maradona''
+## here we creat tuples: (7'Joel'), (9, "Tostenes"), ( 10, "Maradona"), (11, "Romario").
+## key: number of shirts of player
+## value: name of player
+# Method tuples with the process lists: fromkeys(list, value)
+# Example1:
+{}.fromkeys([16,4,2,3])
+{16: none, 4: none, 2: none, 3: none}
+# Example2
+{}.fromkeys([16,4,2,3], "offensive")
+{1: 'offensive', 4: 'offensive', 2: 'offensive', 3: 'offensive'}
+## Example3
+dna = ('a','a','t','c','g','g','g','t','t','a','a','t','g','c','a','a','t','t','c','g')
+ t = 0
+for i in dna:
+        if i=='t':
+                t=t+1
+t
+6
+## Example 4
+t=0
+ c=0
+ g=0
+ a=0
+ for i in dna:
+        if i=='a':
+                a=a+1
+        elif i=='t':
+                t=t+1
+        elif i=='c':
+                c=c+1
+        else:
+                g=g+1
+ a
+6
+t
+6
+c
+3
+g
+5
