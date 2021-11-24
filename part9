@@ -1,0 +1,187 @@
+##Part9
+def function1():
+    pass 
+## Using the keyword return. 
+1: def temp_F(temp_C):
+2: valor = (temp_C*9/5)+32
+3: return value
+##Example with or without return
+###with return
+1: def temp_F(temp_C):
+2: value = (temp_C*9/5) + 32
+3: return value
+### without return
+1: def temp_F(temp_C=25):
+2: value = (temp_C*9/5) +32
+3: print("C=", temp_C, "F=", value)
+4:
+5: temp_F()
+# lets check
+def temp_F(temp_C):
+                  value = (temp_C*9/5)+32
+       return value
+# with interaction with the user
+1: def temp_F(temp_C):
+2:      value = (temp_C*9/5)+32
+3:      return value
+4:
+5: temp = input("Type the temperatue in Celsius degress: ")
+6: temp = float(temp)
+7: temp_F = print("The value of temperature in Fahrenheit degress is:", temp_F(temp))
+##When we change the conversion for Kelvin or absolute:
+1: def temperature(C):
+2:      F = (C*9/5)+32
+3:      K = C + 273
+4:      return(F,K)
+5:
+6: (tempF,tempK) = temperature(25)
+7: print("°C=25, °F=",tempF)
+8: print("°C=25, K=",tempK)
+## Parameters
+1: def temp_F(temp_C=25):
+2:      value = (temp_C*9/5)+32
+3:      return value
+4:
+5: print("Named the function with normal value. °C=25, °F=",temp_F())
+## Scope and time for variables
+def function():
+    print(x)
+    x="Teste"
+    function()
+    Teste
+#Example 2
+def function():
+    x= "Hello, world!"
+    print(x)
+    x="Test"
+    function()
+    print(x)
+    Hello, world! Test    
+#Example3
+def function()
+print(x)
+x= "Hello, world!"
+print(x)
+x= "Test"
+function()
+print(x)
+Hello, world! Erro! UnboundlocalError: local variable 'x' referenced before assignment
+##Example4
+def function():
+    global x
+    print (x)
+    x= "Hello, world!"
+    print (x)
+    x= "Test"
+    function()
+    print(x)
+    Test
+    Hello, world!
+    Hello, world!
+## import "os" (operational system), os.system('cls')
+import os
+
+def menu()
+select = 0
+while(select!=5)
+print("1- Add")
+print("2- Subtraction")
+print("3- Multiplication")
+print("4- Division")
+print("5- Leave")
+select = int(input("Select your option"))
+
+if select == 1
+(op1, op2)= in_data()
+result = add(op1,op2)
+elif select == 2
+(op1, op2)= in_data()
+result == Subtraction(op1, op2)
+elif select == 3
+(op1,op2) = in_data()
+result = Multiplication(op1,op2)
+elif select == 4
+(op1, op2) == in_data()
+result == Division(o1,op2)
+elif select == 5
+get_out()
+print("The result is:" , result)
+# calculator, import
+##In data
+def in_data()
+operation1 = float(input("Operation 1:"))
+operation2 = float(input("Operation 2:"))
+return(operation1, operation2)
+## ADD
+def add(op1,op2):
+    os.system('cls')
+    print("***ADD ***")
+    result = op1+op2
+    return result
+## Subtraction
+def Subtraction(op1, op2):
+    os.system('cls')
+    print("***Subtraction")
+    result = op1-op2
+    return result
+## Multiplicatio
+def Multiplication(op1, op2):
+    os.system('cls')    
+    print("*** Multiplication***")
+    result = op1*op2
+    return result
+## Division
+def Division(op1,op2):
+    os.system('cls')
+    print("***Division***")
+    result = op1/op2
+    return result
+## Leaving the programm
+def get_out()
+print("\n Bye!\n") 
+quit()
+
+menu()
+## Examples
+x = 1
+def function():
+    global x
+    print('x= ', x)
+    x=2
+    print('x global =', x)
+
+function()
+print('Value x=', x)
+
+x= 1
+x global = 2
+value x =2
+## Example 2
+i= 1
+def function():
+    global i
+    for j in (1,2,3):
+        i += 1
+
+function()
+print(i)
+4
+
+##Example 3
+def greater(a,b):
+    if a > b:
+        print(a, 'is more than')
+    elif a== b:
+        print (a, 'equals', b)
+    else:
+        print(b, 'is more than')
+greater(3,4)
+4
+## Example 4
+def Foo (x):
+    if (x ==1):
+        return 1
+        else:
+            return x+Foo(x-1)
+print(Foo(4))
+
