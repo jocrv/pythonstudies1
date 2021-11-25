@@ -1,0 +1,95 @@
+##Part 10
+# file: transport.py
+def calculate_freight():
+    # code function
+def calculate_tax():
+    # code function
+def distance():
+    # code function
+
+calculate_freight();
+calculate_tax();
+distance()
+## IDLE command import
+import transports
+## in this case we import all things of the module
+from transports import distance
+## in that case, the modul transports.py just import a function distance (), others don't be import
+from transport import
+## in this case, import all in this module
+## function module
+transporte.distance()
+## insert a name of module and the resource you want
+### after is possible to insert a variable like:
+dist = transport.distance()
+dist
+## to know the module using the function dir()
+dir(os)
+['DirEntry', 'F_OK', 'MutableMapping', 'O_APPEND', 'O_BINARY', 'O_CREAT', 'O_EXCL', 'O_NOINHERIT', 'O_RANDOM', 'O_RDONLY', 'O_RDWR', 'O_SEQUENTIAL',
+'O_SHORT_LIVED', 'O_TEMPORARY', 'O_TEXT', 'O_TRUNC', 'O_WRONLY', 'P_DETACH', 'P_NOWAIT', 'P_NOWAITO', 'P_OVERLAY', 'P_WAIT', 'PathLike', 'R_OK', 'SEEK_CUR',
+'SEEK_END', 'SEEK_SET', 'TMP_MAX', 'W_OK', 'X_OK', '_Environ', '__all__', '__builtins__', '__cached__', '__doc__', '__file__', '__loader__', '__name__',
+'__package__', '__spec__', '_execvpe', '_exists', '_exit', '_fspath', '_get_exports_list', '_putenv', '_unsetenv', '_wrap_close', 'abc', 'abort', 'access',
+'altsep', 'chdir', 'chmod', 'close', 'closerange', 'cpu_count', 'curdir', 'defpath', 'device_encoding', 'devnull', 'dup', 'dup2', 'environ', 'errno', 'error',
+'execl', 'execle', 'execlp', 'execlpe', 'execv', 'execve', 'execvp', 'execvpe', 'extsep', 'fdopen', 'fsdecode', 'fsencode', 'fspath', 'fstat', 'fsync',
+'ftruncate', 'get_exec_path', 'get_handle_inheritable', 'get_inheritable', 'get_terminal_size', 'getcwd', 'getcwdb', 'getenv', 'getlogin', 'getpid', 'getppid',
+'isatty', 'kill', 'linesep', 'link', 'listdir', 'lseek', 'lstat', 'makedirs', 'mkdir', 'name', 'open', 'pardir', 'path', 'pathsep', 'pipe', 'popen',
+'putenv', 'read', 'readlink', 'remove', 'removedirs', 'rename', 'renames', 'replace', 'rmdir', 'scandir', 'sep', 'set_handle_inheritable', 'set_inheritable',
+'spawnl', 'spawnle', 'spawnv', 'spawnve', 'st', 'startfile', 'stat', 'stat_float_times', 'stat_result', 'statvfs_result', 'strerror', 'supports_bytes_environ',
+'supports_dir_fd', 'supports_effective_ids', 'supports_fd', 'supports_follow_symlinks', 'symlink', 'sys', 'system', 'terminal_size', 'times', 'times_result',
+'truncate', 'umask', 'uname_result', 'unlink', 'urandom', 'utime', 'waitpid', 'walk', 'write']  
+# Packages
+## a lot of frameworks to programming web, application, desktop and mobiles (___init__.py)
+###now insert the content the file freight.py
+_*_ coding: utf-8 -*-
+def test ():
+    print("Testing the file!!!")
+
+d:\>
+#import sys : import this module with all resources in the interpretation
+## sys.path.append('D:\ PORJ\TRANSPORT'): this one you can using the function test(). Archicteture of some framework to helps development. Check path from your project.
+###DIR()
+# After read this package, using the fuction tes() in this module freight.py like:
+# Import a package and module
+import transport.logistic.freight
+transport.logistic.freight.test()
+Testing the file!!!
+## and the end from, import this module
+from transports.logistic import freight
+freight.test()
+Testing this file!!!!
+## In the middle of from, import the fuction
+from transports.logistic.freight import test
+test()
+Testing the file!!
+## ___all___ inside the all files __init__.py from this structure
+### Reverse to import, just using __init__.py and that:
+__all__ = ['logistic', 'finance']
+##Using the moduls after that, you can using __init__.py for every single file, or subfile. Just in case __init__.py in this logistic file, use:
+___all___=['knowledge_eletronic', 'freight', 'routes']
+# Batteris included = WITH THE BATTERY
+dir()
+# Text, Data Structure, Algortim, Time and Calendar, Math Modules, System for archieve, Persistence for data, Compression for data and archivmente, Criptography, Process and Threads
+# Networking, Internet, email, stack for construction for programming, International and Location, Tools for developmente, Function for runtime, Tools for languages, Modules and packages
+##Example:
+import sys
+print("Version of Python:")
+print(sys.Version)
+##Example 2: The programming to accept the circle radius
+from math import pi
+r = float( input("Insert the circle radius: "))
+print ("This arear from the circle radius" + str(r) + "is: " + str(pi*r**2))
+### Example 3: Date and timw
+import datetime
+now = datetime.datetime.now()
+print("Date and time now: ")
+print(now.strftime("%Y-%m-%d %H:%M:%S"))
+####Example 4: calendar for months and years
+import Calendar
+a = int(input("Insert the year: "))
+m = int(input ("Insert the months: "))
+print(calendar.month(a,m))
+####Example 5: the distance between two points (4,0) and (6,6). Remenber geometry analytic
+import mathp1 = [4,0]
+p2 = [6,6]
+dista = math.sqrt( ( ( p1[0]-p2[0])**2)+((p1[1] )**2))
+print(dist)
